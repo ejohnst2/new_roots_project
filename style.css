@@ -2,13 +2,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
 }
 .new-roots-info {
   text-align: center;
   color: white;
   font-size: 36px;
-  z-index: 1;
 }
 
 body {
@@ -30,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 10;
 }
 .earth {
   height: 200px;
@@ -202,3 +201,4 @@ body {
             transform: translate(-250px, 0);
   }
 }
+
