@@ -8,13 +8,19 @@ body {
   text-align: center;
   color: white;
   font-size: 36px;
+  z-index: 1;
 }
 
 body {
   background: #1B2B2F;
   font-family: sans-serif;
 }
-
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .earth {
   height: 200px;
   width: 200px;
