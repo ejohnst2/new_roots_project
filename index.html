@@ -2,23 +2,62 @@
 <html>
   <head>
     <title>New Roots Project</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="world.png" type="image/x-icon">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   </head>
   <body>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">The New Roots Manifesto</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3>A Whole Systems Approach</h3>
+              <p>
+              To our knowledge, this is the first time in earth’s history that a single species has influenced the planet at such a scale; and we’re fully aware of it. With everything changing and everything connected, we need to acknowledge that nature is in fact all that we are. This holistic of an approach allows us to reassess social and ecological roles, and permits unbound design thinking around how we form communities. More efficiency, commerciality, and ideology has brought a great deal of both progress and atrocity, but has not yielded the substantial answers people seek. The rightful life isn’t found through excessive material wealth nor possession nor consumption, and hence more people grow fed and confused with existing convention. We need a wider set of desirable lifestyles that encompass deep connections with ourselves, other humans, and all life around us. This connected living is especially needed in a time when we’ve already allowed so many degrees of separation. Addressing the root of global challenges require us to internalize humanity as part of broader living systems, and then use that as the basis to reform the way we live, think, and organize.
+              </p>
+              <h3>Our Life on Land</h3>
+              <p>
+              We have immense ability to ethically cultivate land and beneficially design ecosystems, but leveraging these abilities hasn’t been made attractive (or available) for younger generations. This comes with good reason, as it seems that we’ve been taking the culture of agri-culture and have devalued agrarian society to a point where there is very little draw. Now urbanization rises alongside the average age of farmers and rural dwellers, which poses a threat to food and heritage alike. With some macro-foresight, there are a few paths for potential food futures: we can either a) become incredibly efficient with urban farming practices, b) become fully reliant on large scale agribusiness, or c) venture new ways to reinvent agrarian societies. With over two-thirds of the planet set to be in urban cities by 2050, rural livelihoods are increasingly left out of the discussion. And although we’ve shown linkage between tranquil environments and well-being, there is less focus on life outside of cities for various cultural and economic reasons that are fully justifiable. But now with our ability to communicate from anywhere, there are more possibilities in how we shape culture and community. Emerging communities are forming (semi-intentionally) on the fringes that are pushing the boundaries of lifestyle design and hinting at what’s possible. So if we place intention behind combining ancestral knowledge, human ecology, and modern capabilities, we may surprise ourselves.
+              </p>
+              <h3>Grounds for Experimentation</h3>
+              <p>
+              Sustainability is defined as meeting our needs without compromising future generations ability to meet theirs. And since we have already compromised that very future, we must dig deep to assess what’s worth sustaining in the first place and what needs changing at the roots. The assessment both mathematical and cultural because while we can calculate textbook sustainability, our culture must shift to support it. Recent cultural changes have been largely led by questionable growth and development metrics with little attempt by those in power to design for alignment. Rebalancing from a pure consumer culture to more of a maker culture can reduce institutional dependence for our everyday needs, leading to more decentralized and autonomous modes of living. An increased sense of self reliance can allow people to live to their truest creative potential and add value back into a system instead of feeling victim to it. Converging trends such as the rise of remote work, the increasing age of farmers, and a growing maker movement, all make it timely to experiment with alternatives.
+              </p>
+              <h3>Planting New Roots</h3>
+              <p>
+              By fostering our ability to shape change, we can move toward an alignment of economy, ecology, and the right to life. But it can only come with collective intention. By embracing all biological life in a far more cooperative capacity, instead of projecting domination, we begin to recognize the abundance of possibilities. Therefore, moving into earth 2020, I invite us all to the open the question: what are the <strong>new roots</strong> we want to plant?
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">I'm in...</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="content">
       <div class="new-roots-info">
         <h1>New Roots Project</h1>
         <h2>Earth 2020</h2>
+        <button type="button" class="btn btn-primary" id="read-manifesto" data-toggle="modal" data-target="#exampleModal">
+          Read the Manifesto
+        </button>
       </div>
         <div class="sign-up-form">
           <!-- Begin Mailchimp Signup Form -->
         <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
         <div id="mc_embed_signup">
         <form action="https://changeinit.us17.list-manage.com/subscribe/post?u=ae8bf8cd2432327c0397d0639&amp;id=58723a6abd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
+        <div id="mc_embed_signup_scroll">
           <h2>For a more intentional humanity rooted in ecology</h2>
         <div class="mc-field-group">
           <input type="email" value="Your Email" name="EMAIL" class="required email" id="mce-EMAIL">
@@ -29,17 +68,21 @@
           </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ae8bf8cd2432327c0397d0639_58723a6abd" tabindex="-1" value=""></div>
             <div class="clear"><input type="submit" value="Join Mail List" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-            </div>
+          </div>
         </form>
         </div>
         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
         <!--End mc_embed_signup-->
       </div>
     </div>
+
     <div class="earth">
       <div class="earth--shadow"></div>
     </div>
     <div class="moon"></div>
     <div class="stars"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>

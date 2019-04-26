@@ -7,13 +7,21 @@ body {
   text-align: center;
   color: white;
   font-size: 36px;
+  margin-top: 10%;
+}
+.new-roots-info h1, h2 {
+  font-weight: 600;
 }
 
 body {
   background: #1B2B2F;
-  font-family: sans-serif;
+  font-family: Helvetica,Arial,sans-serif;
 }
-
+#read-manifesto {
+  z-index: 10;
+  background-color: white;
+  color: black;
+}
 #mc_embed_signup {
   background:#fff;
   border-radius: 3px;
@@ -31,6 +39,9 @@ body {
   z-index: 10;
 }
 .earth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   width: 200px;
   border-radius: 50%;
