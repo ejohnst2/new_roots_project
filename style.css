@@ -18,6 +18,7 @@ body {
   font-family: Helvetica,Arial,sans-serif;
 }
 #read-manifesto {
+  z-index: 10;
   background-color: #7FDA57;
   color: white;
   font-weight: bold;
